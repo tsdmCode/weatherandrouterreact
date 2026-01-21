@@ -98,7 +98,7 @@ export function WeatherCard({
       <div>
         <WeatherIcon category={category} isDay={isDay} size={36} />
         <p>Temperatur: {temperature} celsius</p>
-        <p>Vindstyrke: {windspeed}m/s</p>
+        <p>Vindstyrke: {(windspeed / 3.6).toFixed(2)}m/s</p>
         <p>Fugtighed: {humidity}%</p>
         <p>Skydække: {cloudCover}%</p>
         <p>Sightbarhed: {visibility}m</p>

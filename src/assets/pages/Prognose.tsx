@@ -25,6 +25,7 @@ export function Prognose() {
       return (
         <PrognoseCard
           key={time}
+          date={time}
           tempMax={temperature_2m_max[index]}
           tempMin={temperature_2m_min[index]}
           precipitation={precipitation_sum[index]}
