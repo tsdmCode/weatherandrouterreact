@@ -1,0 +1,13 @@
+.prognose {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 1rem;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .prognose {
+    flex-direction: row;
+  }
+}

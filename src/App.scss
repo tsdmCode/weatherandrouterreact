@@ -1,0 +1,33 @@
+:root {
+  background-color: #36393e;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Google Sans;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #f1f1f1;
+  margin: 0 1.5rem;
+  padding: 1rem 0rem;
+}
+
+ul {
+  text-align: left;
+}
