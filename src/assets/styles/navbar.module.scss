@@ -4,8 +4,14 @@
   width: 100%;
   background-color: #7289da;
   a {
-    text-decoration: underline;
+    text-decoration: none;
     color: black;
     padding: 1rem;
   }
+}
+
+.activeStyles {
+  font-weight: bold;
+  text-decoration: 'underline';
+  color: #161616;
 }

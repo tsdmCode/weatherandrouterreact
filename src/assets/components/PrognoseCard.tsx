@@ -1,4 +1,5 @@
 import style from '../styles/prognosecard.module.scss';
+import { WiStrongWind, WiThermometer, WiRain } from 'react-icons/wi';
 
 interface PrognoseCardProps {
   tempMax: number;
@@ -12,10 +13,15 @@ export function PrognoseCard({ tempMax, tempMin, precipitation, windspeed, date 
   return (
     <article className={style.progCard}>
       <p>{date} </p>
-      <p>Max temperatur: {tempMax} grader</p>
-      <p>Minimum temperatur: {tempMin} grader</p>
-      <p>Nedbør: {precipitation}mm</p>
-      <p>Vindstyrke: {(windspeed / 3.6).toFixed(2)} m/s</p>
+      <p>
+        <WiThermometer /> Temperatur: {tempMin} til {tempMax}°C
+      </p>
+      <p>
+        <WiRain /> Nedbør: {precipitation}mm
+      </p>
+      <p>
+        <WiStrongWind /> Vindstyrke: {(windspeed / 3.6).toFixed(2)} m/s
+      </p>
     </article>
   );
 }
