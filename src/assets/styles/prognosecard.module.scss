@@ -2,5 +2,34 @@
   padding: 1rem;
   border-radius: 5px;
   box-shadow: 1px 2px 2px 2px black;
-  text-align: left;
+  text-align: center;
+  overflow: hidden;
+
+  .weatherWindow {
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
+    padding: 1.5rem 0rem;
+    gap: 0.5rem;
+  }
+
+  .weatherWindow div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+    border-right: 1px solid black;
+    text-align: center;
+    padding-right: 0.25rem;
+  }
+
+  .weatherWindow div:last-of-type {
+    border-right: none;
+  }
+}
+
+.weatherIcon {
+  size: 36;
 }
